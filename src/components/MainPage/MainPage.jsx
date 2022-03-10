@@ -3,7 +3,7 @@ import Projects from "./Projects/Projects";
 import playListLogo from "../../images/welcome_page_known_user_b.PNG";
 import globalShopLogo from "../../images/shops-g0fd51ba89_640.jpg";
 import panchTimeLogo from "../../images/clock-gb966335cb_640.jpg";
-import ticTacToeLogo from "../../images/clover-g7a6e366f4_640Tic.jpg";
+import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 
 const MainPage = () => {
