@@ -3,5 +3,6 @@
 }
 
 .MainPage-linkedin {
-  /* position: absolute; */
+  position: absolute;
+  left: 20px;
 }

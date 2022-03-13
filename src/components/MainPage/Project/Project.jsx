@@ -14,10 +14,10 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
+// import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+// import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -52,10 +52,6 @@ const Project = ({
   return (
     active && (
       <Card className="Project-card" sx={{ maxWidth: 345 }}>
-        {/* {features.map((v) => (
-          <p>{v}$$$</p>
-        ))} */}
-
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -68,15 +64,22 @@ const Project = ({
           //   </IconButton>
           // }
           // title={projectName}
-          title={<a href={url}>{projectName}</a>}
+          title={
+            <a href={url} target="_blank">
+              {projectName}
+            </a>
+          }
           subheader={frameWork}
         />
-        <CardMedia
-          component="img"
-          height="194"
-          image={image}
-          alt="Paella dish"
-        />
+        <a href={url} target="_blank">
+          <CardMedia
+            component="img"
+            height="194"
+            image={image}
+            alt={projectName}
+          />
+        </a>
+
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             {details}

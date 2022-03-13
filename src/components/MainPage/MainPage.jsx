@@ -6,6 +6,7 @@ import panchTimeLogo from "../../images/clock-gb966335cb_640.jpg";
 import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../../images/chuckNorris.PNG";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const MainPage = () => {
   const myProjects = [
@@ -129,12 +130,15 @@ const MainPage = () => {
   ];
   return (
     <div>
+      {/* <LinkedInIcon fontSize="large" color="primary" /> */}
       <a
         className="MainPage-linkedin"
         href="https://www.linkedin.com/in/yehuda-krantz/"
+        target="_blank"
       >
-        Linkedin Profile
+        <LinkedInIcon fontSize="large" color="primary" />
       </a>
+
       <h1 className="MainPage-title">My Portfolio - Yehudah Krantz</h1>
       <div className="MainPage-projectsContainer">
         <Projects myProjects={myProjects} />
