@@ -48,7 +48,6 @@ const Project = ({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  console.log({ features });
   return (
     active && (
       <Card className="Project-card" sx={{ maxWidth: 345 }}>

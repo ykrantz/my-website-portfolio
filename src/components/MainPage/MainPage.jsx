@@ -7,6 +7,8 @@ import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../../images/chuckNorris.PNG";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import NavTabs from "../NavTabs/NavTabs";
+import TempNav from "../TempNav/TempNav";
 
 const MainPage = () => {
   const myProjects = [
@@ -129,17 +131,20 @@ const MainPage = () => {
     },
   ];
   return (
-    <div>
+    <div className="MainPage-page">
       {/* <LinkedInIcon fontSize="large" color="primary" /> */}
+      <NavTabs />
+
+      {/* 
       <a
         className="MainPage-linkedin"
         href="https://www.linkedin.com/in/yehuda-krantz/"
         target="_blank"
       >
         <LinkedInIcon fontSize="large" color="primary" />
-      </a>
+      </a> */}
 
-      <h1 className="MainPage-title">My Portfolio - Yehudah Krantz</h1>
+      <h1 className="MainPage-title">My Projects</h1>
       <div className="MainPage-projectsContainer">
         <Projects myProjects={myProjects} />
       </div>
