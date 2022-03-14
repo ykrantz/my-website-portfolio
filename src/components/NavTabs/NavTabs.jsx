@@ -16,17 +16,18 @@ import { useNavigate } from "react-router-dom";
 //   );
 // }
 
-export default function NavTabs() {
-  const [value, setValue] = React.useState(1);
+export default function NavTabs({ tabName }) {
+  const tagIndex = {
+    mainPage: 0,
+    aboutMe: 1,
+  };
+  const [value, setValue] = React.useState(tagIndex[tabName]);
 
   let navigate = useNavigate();
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Tabs
-        //   value={value}
-        aria-label="nav tabs example"
-      >
+      <Tabs value={value} aria-label="nav tabs example">
         <Tab
           label="Portfolio"
           onClick={() => {

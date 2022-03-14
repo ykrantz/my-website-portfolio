@@ -20,15 +20,17 @@ const MainPage = () => {
       url: "https://playlist-ykrantz.netlify.app/",
       avatar: "VP",
       active: true,
-      details: `JWT athorizaiotn ||
+      details: `JWT athorizaiotn || Password bcrypt
       Data from server ||
       DB updated each tranzaction ||
+      React hooks||
       YouTube API
       `,
 
       features: [
         "- Register and log in in with your personal account",
         "- Website will remember you in your next enternce with your athorizaiotn tocken",
+        "- Password encrypted by bcrypt library and DB saves only the encypted password ",
         "- Create new playlists and Save songs in playlists",
         "- Search for videos in YouTube with out advertizments",
         "- Play the video on your demand",
@@ -56,21 +58,21 @@ const MainPage = () => {
       url: "https://online-shop-ykrantz.netlify.app/",
       avatar: "OS",
       active: true,
-      details: "React || Data from API ",
+      details: "React || Data from API || React hooks ",
       features: [
-        "- Add products to cart and get total price",
         "- Filter products and sort according to your preferance",
+        "- Add products to cart and get total price",
       ],
     },
     {
       id: 14,
-      frameWork: "HTML (vanila)+ JS",
+      frameWork: "HTML (vanila) + CSS + JS",
       projectName: "Tic Tac Toe",
       image: ticTacToeLogo,
       url: "https://tic-tac-toe-ykrantz.netlify.app/",
       avatar: "TT",
       active: true,
-      details: "Vanila HTML || JavaScript logic",
+      details: "HTML || JavaScript || HTML Query Selectors || CSS ",
       features: [
         "Play with your friend Tic Tac Toe until winning",
         "Decide how match row/columns you wnt in game between 3-10 row/columns",
@@ -83,13 +85,13 @@ const MainPage = () => {
     },
     {
       id: 50,
-      frameWork: "HTML (vanila) + JS",
+      frameWork: "HTML (vanila) + CSS + JS",
       projectName: "Grocery Store",
       image: groceryShopLogo,
       url: "",
       avatar: "GS",
       active: false,
-      details: "Vanila HTML || JavaScript logic",
+      details: " HTML || JavaScript || HTML Query Selectors || CSS ",
       features: [],
     },
     {
@@ -122,7 +124,7 @@ const MainPage = () => {
       url: "https://chuck-norris-ykrantz.netlify.app/",
       avatar: "CN",
       active: true,
-      details: "HTML (vanila)+ JS + API",
+      details: " HTML || JavaScript || HTML Query Selectors || CSS",
       features: [
         "Choose category and get 3 random Chuck Norris jokes",
         "Search jokes in category (no need to press the search button)",
@@ -132,17 +134,7 @@ const MainPage = () => {
   ];
   return (
     <div className="MainPage-page">
-      {/* <LinkedInIcon fontSize="large" color="primary" /> */}
-      <NavTabs />
-
-      {/* 
-      <a
-        className="MainPage-linkedin"
-        href="https://www.linkedin.com/in/yehuda-krantz/"
-        target="_blank"
-      >
-        <LinkedInIcon fontSize="large" color="primary" />
-      </a> */}
+      <NavTabs tabName="mainPage" />
 
       <h1 className="MainPage-title">My Projects</h1>
       <div className="MainPage-projectsContainer">

@@ -10,15 +10,43 @@
   position: absolute;
   left: 20px;
   top: 20px;
+  width: 100%;
+  padding-bottom: 0;
+  height: 100%;
 }
 
 .AboutMe-headerContainer {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
-
+  align-content: center;
   /* flex-direction: column; */
 }
-.AboutMe-linkedin {
+
+.AboutMe-mainPage {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../../images/resume-6627200.jpg");
+  background-size: cover;
+  height: 100%;
+  /* margin-bottom: 0; */
+}
+.AboutMe-linkedinDiv {
+  align-content: center;
+
+  /* position: relative;
+  left: 20px;
+  top: 50px; */
+  /* display: flex; */
+  /* float: left; */
+}
+.AboutMe-linkedinIcon {
+  /* align-content: center; */
+  position: relative;
+  top: 40px;
+  left: 30px;
+
   /* position: relative;
   left: 20px;
   top: 50px; */
@@ -28,8 +56,26 @@
 .AboutMe-title {
   /* display: flex; */
   /* float: right; */
+  margin-left: 30px;
+}
+.AboutMe-cvDiv {
+  /* align-content: center; */
+  display: inline-flex;
+  position: relative;
+  top: 10px;
+  left: 30px;
 }
 
 .AboutMe-cvFile {
   align-content: center;
+}
+.AboutMe-ulDetails {
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 20%;
+  display: table;
+}
+
+.AboutMe-aboutMeTitle {
+  justify-content: left;
 }
