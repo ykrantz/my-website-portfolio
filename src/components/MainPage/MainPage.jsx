@@ -6,6 +6,8 @@ import panchTimeLogo from "../../images/clock-gb966335cb_640.jpg";
 import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../../images/chuckNorris.PNG";
+import memoryGame from "../../images/memoryGame.PNG";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import NavTabs from "../NavTabs/NavTabs";
 import TempNav from "../TempNav/TempNav";
@@ -84,6 +86,33 @@ const MainPage = () => {
       ],
     },
     {
+      id: 15,
+      frameWork: "HTML (vanila) + JS + API",
+      projectName: "Memory Game",
+
+      image: memoryGame,
+      url: "https://memory-game-ykrantz.netlify.app/",
+      avatar: "MG",
+      active: true,
+      details: " HTML || JavaScript || HTML Query Selectors || CSS",
+      features: ["- Guess cards that match"],
+    },
+    {
+      id: 16,
+      frameWork: "HTML (vanila) + JS + API",
+      projectName: "Chuck Noris Jokes",
+      image: chuckNorris,
+      url: "https://chuck-norris-ykrantz.netlify.app/",
+      avatar: "CN",
+      active: true,
+      details: " HTML || JavaScript || HTML Query Selectors || CSS",
+      features: [
+        "Choose category and get 3 random Chuck Norris jokes",
+        "Search jokes in category (no need to press the search button)",
+        "Get random joke",
+      ],
+    },
+    {
       id: 50,
       frameWork: "HTML (vanila) + CSS + JS",
       projectName: "Grocery Store",
@@ -115,21 +144,6 @@ const MainPage = () => {
       active: false,
       details: "",
       features: [],
-    },
-    {
-      id: 16,
-      frameWork: "HTML (vanila) + JS + API",
-      projectName: "Chuck Noris Jokes",
-      image: chuckNorris,
-      url: "https://chuck-norris-ykrantz.netlify.app/",
-      avatar: "CN",
-      active: true,
-      details: " HTML || JavaScript || HTML Query Selectors || CSS",
-      features: [
-        "Choose category and get 3 random Chuck Norris jokes",
-        "Search jokes in category (no need to press the search button)",
-        "Get random joke",
-      ],
     },
   ];
   return (

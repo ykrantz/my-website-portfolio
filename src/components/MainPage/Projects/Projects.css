@@ -1,3 +1,9 @@
 .Projects-projectContainer {
   display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+  overflow: hidden;
+  overflow-x: scroll;
+  /* min-width: 80px; */
+  width: 100%;
 }
