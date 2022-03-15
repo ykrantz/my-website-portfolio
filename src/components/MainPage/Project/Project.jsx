@@ -14,9 +14,14 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import ShareIcon from "@mui/icons-material/Share";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Tooltip from "@mui/material/Tooltip";
+
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShareIcon from "@mui/icons-material/Share";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import GitHubButton from "../GitHubButton/GitHubButton";
 // import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ExpandMore = styled((props) => {
@@ -37,6 +42,8 @@ const Project = ({
     projectName,
     image,
     url,
+    gitHubUrlClient,
+    gitHubUrlServer,
     avatar,
     active,
     details,
@@ -51,47 +58,58 @@ const Project = ({
   return (
     active && (
       <Card className="Project-card" sx={{ maxWidth: 345 }}>
-        <CardHeader
-          avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              {avatar}
-            </Avatar>
-          }
-          // action={
-          //   <IconButton aria-label="settings">
-          //     <MoreVertIcon />
-          //   </IconButton>
-          // }
-          // title={projectName}
-          title={
-            <a href={url} target="_blank">
-              {projectName}
-            </a>
-          }
-          subheader={frameWork}
-        />
-        <a href={url} target="_blank">
-          <CardMedia
-            component="img"
-            height="194"
-            image={image}
-            alt={projectName}
+        <div className="Project-CardHeader">
+          <CardHeader
+            avatar={
+              <Tooltip title={projectName}>
+                <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                  {avatar}
+                </Avatar>
+              </Tooltip>
+            }
+            // action={
+            //   <IconButton aria-label="settings">
+            //     <MoreVertIcon />
+            //   </IconButton>
+            // }
+            // title={projectName}
+            title={
+              <a href={url} target="_blank">
+                {projectName}
+              </a>
+            }
+            subheader={frameWork}
           />
-        </a>
+          <a href={url} target="_blank">
+            <CardMedia
+              component="img"
+              height="194"
+              image={image}
+              alt={projectName}
+            />
+          </a>
 
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            {details}
-          </Typography>
-        </CardContent>
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              {details}
+            </Typography>
+          </CardContent>
+        </div>
         <CardActions disableSpacing>
+          {gitHubUrlClient && (
+            <GitHubButton gitHubUrl={gitHubUrlClient} urlType="client" />
+          )}
+          {gitHubUrlServer && (
+            <GitHubButton gitHubUrl={gitHubUrlServer} urlType="server" />
+          )}
+
           {/* <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        
-        </IconButton> */}
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton aria-label="share">
+            <ShareIcon />
+          </IconButton> */}
+
           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}

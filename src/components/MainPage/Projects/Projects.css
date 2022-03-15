@@ -4,6 +4,9 @@
 
   overflow: hidden;
   overflow-x: scroll;
+  /* overflow-y: scroll; */
   /* min-width: 80px; */
   width: 100%;
+  /* hight: 400px;
+  flex-wrap: nowrap; */
 }

@@ -8,3 +8,7 @@
   flex-basis: 40%;
   flex-shrink: 0;
 }
+
+.Project-CardHeader {
+  min-height: 360px;
+}
