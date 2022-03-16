@@ -7,6 +7,7 @@ import TempNav from "../TempNav/TempNav";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import Detail from "./Detail/Detail";
 import { Stack } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 
 const AboutMe = () => {
   const aboutMeDetails = [
@@ -27,7 +28,9 @@ const AboutMe = () => {
               href="https://www.linkedin.com/in/yehuda-krantz/"
               target="_blank"
             >
-              <LinkedInIcon fontSize="large" color="primary" />
+              <Tooltip title={"my Linkdin"}>
+                <LinkedInIcon fontSize="large" color="primary" />
+              </Tooltip>
             </a>
           </div>
         </div>
@@ -40,11 +43,13 @@ const AboutMe = () => {
             // href="https://drive.google.com/file/d/1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs/view?usp=sharing"
             href="https://drive.google.com/uc?export=download&id=1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs"
           >
-            <FileDownloadIcon
-              className="AboutMe-cvFile"
-              variant="contained"
-              fontSize="large"
-            />
+            <Tooltip title={"downlaod CV"}>
+              <FileDownloadIcon
+                className="AboutMe-cvFile"
+                variant="contained"
+                fontSize="large"
+              />
+            </Tooltip>
           </a>
         </div>
         <h2 className="AboutMe-aboutMeTitle">About Me: </h2>
