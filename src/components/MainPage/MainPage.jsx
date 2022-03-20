@@ -25,7 +25,7 @@ const MainPage = () => {
       avatar: "VP",
       active: true,
       details: `JWT athorizaiotn || Password bcrypt
-      Data from server ||
+      AJAX ||
       DB updated each tranzaction ||
       React hooks||
       YouTube API
@@ -53,7 +53,7 @@ const MainPage = () => {
       gitHubUrlServer: "https://github.com/ykrantz/server-panch-time-clock",
       avatar: "PT",
       active: true,
-      details: ` Data from server ||
+      details: `AJAX ||
       DB updated each tranzaction ||
       React hooks||`,
       features: [
@@ -73,7 +73,7 @@ const MainPage = () => {
       gitHubUrlServer: "",
       avatar: "OS",
       active: true,
-      details: "React || Data from API || React hooks ",
+      details: "React || AJAX || React hooks ",
       features: [
         "- Filter products and sort according to your preferance",
         "- Add products to cart and get total price",
@@ -124,7 +124,7 @@ const MainPage = () => {
       gitHubUrlServer: "",
       avatar: "CN",
       active: true,
-      details: " HTML || JavaScript || HTML Query Selectors || CSS",
+      details: " AJAX || HTML || JavaScript || HTML Query Selectors || CSS",
       features: [
         "Choose category and get 3 random Chuck Norris jokes",
         "Search jokes in category (no need to press the search button)",
@@ -154,7 +154,7 @@ const MainPage = () => {
       gitHubUrlServer: "",
       avatar: "TD",
       active: false,
-      details: "",
+      details: "React || React hooks || HTML",
       features: [],
     },
     {
@@ -167,7 +167,7 @@ const MainPage = () => {
       gitHubUrlServer: "",
       avatar: "TD",
       active: false,
-      details: "",
+      details: "React || Redux || React hooks || HTML",
       features: [],
     },
   ];
