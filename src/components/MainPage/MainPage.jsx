@@ -2,7 +2,7 @@ import "./MainPage.css";
 import Projects from "./Projects/Projects";
 import playListLogo from "../../images/welcome_page_known_user_b.PNG";
 import onlineShopLogo from "../../images/online-shop.PNG";
-import panchTimeLogo from "../../images/clock-gb966335cb_640.jpg";
+import panchTimeLogo from "../../images/panckTimeClock.png";
 import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../../images/chuckNorris.PNG";
@@ -48,16 +48,23 @@ const MainPage = () => {
       frameWork: "React + Node.js + MongoDB",
       projectName: "Panck Time Watch",
       image: panchTimeLogo,
-      url: "",
-      gitHubUrlClient: "",
-      gitHubUrlServer: "",
+      url: "https://panch-time-clock.netlify.app/",
+      gitHubUrlClient: "https://github.com/ykrantz/panch_time_clock-client",
+      gitHubUrlServer: "https://github.com/ykrantz/server-panch-time-clock",
       avatar: "PT",
-      active: false,
-      details: "",
-      features: [],
+      active: true,
+      details: ` Data from server ||
+      DB updated each tranzaction ||
+      React hooks||`,
+      features: [
+        "- Report enterance and exit time of worker by worker id",
+        "- Create new workers ID",
+        "- CalcUlate total hours of the last shift",
+        "- Get details of all shift that a worker did",
+      ],
     },
     {
-      id: 12,
+      id: 16,
       frameWork: "React + API ",
       projectName: "Online Shop",
       image: onlineShopLogo,
@@ -108,7 +115,7 @@ const MainPage = () => {
       features: ["- Guess cards that match"],
     },
     {
-      id: 16,
+      id: 22,
       frameWork: "HTML (vanila) + JS + API",
       projectName: "Chuck Noris Jokes",
       image: chuckNorris,
