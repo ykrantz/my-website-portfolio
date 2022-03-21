@@ -24,7 +24,7 @@ const MainPage = () => {
       gitHubUrlServer: "https://github.com/ykrantz/song-list-full-server",
       avatar: "VP",
       active: true,
-      details: `JWT athorizaiotn || Password bcrypt
+      details: `JWT athorizaiotn || Password bcrypt ||
       AJAX ||
       React hooks ||
       DB updated each tranzaction 
@@ -104,8 +104,7 @@ const MainPage = () => {
       avatar: "PT",
       active: true,
       details: `AJAX ||
-      DB updated each tranzaction ||
-      React hooks||`,
+      DB updated each tranzaction`,
       features: [
         "- Report enterance and exit time of worker by worker id",
         "- Create new workers ID",
