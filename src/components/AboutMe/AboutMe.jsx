@@ -3,13 +3,14 @@ import "./AboutMe.css";
 import React from "react";
 import NavTabs from "../NavTabs/NavTabs";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TempNav from "../TempNav/TempNav";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import Detail from "./Detail/Detail";
-import { Stack } from "@mui/material";
 import Tooltip from "@mui/material/Tooltip";
 
 const AboutMe = () => {
+  const CV_LINK =
+    "https://drive.google.com/uc?export=download&id=1r1QoJlSoe6ej83cTiXRvXkgHYGOLX835";
+
   const aboutMeDetails = [
     "Looking for the next challenge in SW development",
     "Frontend: JavaScript, React.js || Backend: Node.js || DB: MongoDB, Sql",
@@ -41,7 +42,7 @@ const AboutMe = () => {
             className="AboutMe-cvFile"
             // if want to show  directly in google
             // href="https://drive.google.com/file/d/1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs/view?usp=sharing"
-            href="https://drive.google.com/uc?export=download&id=1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs"
+            href={CV_LINK}
           >
             <Tooltip title={"downlaod CV"}>
               <FileDownloadIcon

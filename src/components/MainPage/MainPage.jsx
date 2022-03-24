@@ -8,9 +8,7 @@ import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../../images/chuckNorris.PNG";
 import memoryGame from "../../images/memoryGame.PNG";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import NavTabs from "../NavTabs/NavTabs";
-import TempNav from "../TempNav/TempNav";
 
 const MainPage = () => {
   const myProjects = [
@@ -27,7 +25,7 @@ const MainPage = () => {
       details: `JWT athorizaiotn || Password bcrypt ||
       AJAX ||
       React hooks ||
-      DB updated each tranzaction 
+      DB updated each transaction 
       `,
 
       features: [
@@ -103,8 +101,8 @@ const MainPage = () => {
       gitHubUrlServer: "https://github.com/ykrantz/server-panch-time-clock",
       avatar: "PT",
       active: true,
-      details: `AJAX ||
-      DB updated each tranzaction`,
+      details: `React || AJAX ||
+      DB updated each transaction`,
       features: [
         "- Report enterance and exit time of worker by worker id",
         "- Create new workers ID",
@@ -122,7 +120,7 @@ const MainPage = () => {
       gitHubUrlServer: "",
       avatar: "CN",
       active: true,
-      details: " AJAX || HTML || JavaScript || HTML Query Selectors || CSS",
+      details: " AJAX || HTML || CSS || HTML Query Selectors || JavaScript",
       features: [
         "Choose category and get 3 random Chuck Norris jokes",
         "Search jokes in category (no need to press the search button)",
