@@ -1,7 +1,7 @@
 import "./MainPage.css";
 import Projects from "./Projects/Projects";
 import playListLogo from "../../images/welcome_page_known_user_c.png";
-import onlineShopLogo from "../../images/online-shop.PNG";
+import onlineShopLogo from "../../images/online-shop-b.png";
 import panchTimeLogo from "../../images/panckTimeClock.png";
 import ticTacToeLogo from "../../images/tic-tac-toe.PNG";
 import groceryShopLogo from "../../images/grocery-gf851f3910_640.jpg";
