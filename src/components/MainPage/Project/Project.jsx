@@ -21,7 +21,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import GitHubButton from "../GitHubButton/GitHubButton";
+import GitHubButton from "../../GitHubButton/GitHubButton";
 // import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ExpandMore = styled((props) => {

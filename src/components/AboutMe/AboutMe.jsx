@@ -6,6 +6,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import Detail from "./Detail/Detail";
 import Tooltip from "@mui/material/Tooltip";
+import GitHubButton from "../GitHubButton/GitHubButton";
+import { Box, Grid } from "@mui/material";
 
 const AboutMe = () => {
   const CV_LINK =
@@ -23,16 +25,27 @@ const AboutMe = () => {
       <div className="AboutMe-mainPage">
         <div className="AboutMe-headerContainer">
           <h1 className="AboutMe-title">Yehuda Krantz</h1>
-          <div className="AboutMe-linkedinDiv">
-            <a
-              className="AboutMe-linkedinIcon"
-              href="https://www.linkedin.com/in/yehuda-krantz/"
-              target="_blank"
-            >
-              <Tooltip title={"my Linkdin"}>
-                <LinkedInIcon fontSize="large" color="primary" />
-              </Tooltip>
-            </a>
+          <div className="AboutMe-linkesDiv">
+            {/* <Box display="flex" alignItems="center" justifyContent="center"> */}
+
+            <div className="AboutMe-linkedinLink">
+              <a
+                className="AboutMe-linkedinIcon"
+                href="https://www.linkedin.com/in/yehuda-krantz/"
+                target="_blank"
+              >
+                <Tooltip title={"my Linkdin"}>
+                  <LinkedInIcon fontSize="large" color="primary" />
+                </Tooltip>
+              </a>
+            </div>
+
+            <div className="AboutMe-gitHubLink">
+              <GitHubButton
+                gitHubUrl="https://github.com/ykrantz"
+                urlType="link"
+              />
+            </div>
           </div>
         </div>
         {/* <br></br> */}
@@ -56,7 +69,7 @@ const AboutMe = () => {
         <h2 className="AboutMe-aboutMeTitle">About Me: </h2>
         <ul className="AboutMe-ulDetails">
           {aboutMeDetails.map((detail) => (
-            <Detail detail={detail} />
+            <Detail key={detail} detail={detail} />
           ))}
         </ul>
       </div>

@@ -1,10 +1,48 @@
 .AboutMe-Nav {
-  /* position: absolute;
-  left: 20px; */
 
-  /* position: absolute;
+}
+.AboutMe-linkesDiv {
+  /* align-content: center; */
+  /* display: inline; */
+  /* position: relative;
   left: 20px;
-  top: 20px; */
+  top: 50px; */
+  /* display: flex; */
+  /* float: left; */
+}
+
+.AboutMe-linkedinLink{
+  /* align-items: center; */
+  /* margin-left: 20px; */
+  /* vertical-align: middle;  */
+  /* margin-top: 20px; */
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 35px;
+  
+}
+
+.AboutMe-gitHubLink{
+  /* align-items: center; */
+  margin-left: 80px;
+  margin-top: -50px;
+  /* margin-top: 30px; */
+  /* padding: 0px; */
+  /* margin-top: 10%; */
+  /* vertical-align: middle; */
+  
+}
+.AboutMe-linkedinIcon {
+  /* align-content: center; */
+  /* position: relative;
+  top: 40px;
+  left: 30px; */
+
+  /* position: relative;
+  left: 20px;
+  top: 50px; */
+  /* display: flex; */
+  /* float: left; */
 }
 .AboutMe-page {
   position: absolute;
@@ -32,27 +70,8 @@
   height: 100%;
   /* margin-bottom: 0; */
 }
-.AboutMe-linkedinDiv {
-  align-content: center;
 
-  /* position: relative;
-  left: 20px;
-  top: 50px; */
-  /* display: flex; */
-  /* float: left; */
-}
-.AboutMe-linkedinIcon {
-  /* align-content: center; */
-  position: relative;
-  top: 40px;
-  left: 30px;
 
-  /* position: relative;
-  left: 20px;
-  top: 50px; */
-  /* display: flex; */
-  /* float: left; */
-}
 .AboutMe-title {
   /* display: flex; */
   /* float: right; */

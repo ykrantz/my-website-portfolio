@@ -6,7 +6,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 const GitHubButton = ({ gitHubUrl, urlType }) => {
-  const color = { client: "primary", server: "secondary" };
+  const color = { client: "primary", server: "secondary", link: "secondary" };
   return (
     <div>
       <IconButton aria-label="git link">
