@@ -1,59 +1,43 @@
 .AboutMe-Nav {
 
 }
+.AboutMe-Nav-div{
+  margin-left: 70px;
+}
 .AboutMe-linkesDiv {
-  /* align-content: center; */
-  /* display: inline; */
-  /* position: relative;
-  left: 20px;
-  top: 50px; */
-  /* display: flex; */
-  /* float: left; */
+  display: flex;
+
 }
 
+
 .AboutMe-linkedinLink{
-  /* align-items: center; */
-  /* margin-left: 20px; */
-  /* vertical-align: middle;  */
-  /* margin-top: 20px; */
+
   text-align: left;
-  margin-left: 20px;
-  margin-top: 35px;
+  margin-left: 30px;
+  margin-top: 30px;
   
 }
 
 .AboutMe-gitHubLink{
-  /* align-items: center; */
-  margin-left: 80px;
-  margin-top: -50px;
-  /* margin-top: 30px; */
-  /* padding: 0px; */
-  /* margin-top: 10%; */
-  /* vertical-align: middle; */
+ 
+  margin-top:20px;
+  margin-left: 30px;
+
   
 }
 .AboutMe-linkedinIcon {
-  /* align-content: center; */
-  /* position: relative;
-  top: 40px;
-  left: 30px; */
 
-  /* position: relative;
-  left: 20px;
-  top: 50px; */
-  /* display: flex; */
-  /* float: left; */
 }
 .AboutMe-page {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 100%;
+
+
+  width: 100vw;
   padding-bottom: 0;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .AboutMe-headerContainer {
+  
   display: flex;
   justify-content: center;
   align-content: center;
@@ -67,7 +51,8 @@
     ),
     url("../../images/resume-6627200.jpg");
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  /* padding: 20px; */
   /* margin-bottom: 0; */
 }
 
@@ -76,6 +61,15 @@
   /* display: flex; */
   /* float: right; */
   margin-left: 30px;
+  color:crimson;
+  font-size: 35px;
+ 
+
+  
+}
+.AboutMe-myCvTitle{
+color: darkgreen;
+
 }
 .AboutMe-cvDiv {
   /* align-content: center; */
@@ -97,4 +91,63 @@
 
 .AboutMe-aboutMeTitle {
   justify-content: left;
+  /* margin-left: 0px; */
+}
+
+
+@media only screen  and (max-width:600px) {
+ 
+  .AboutMe-mainPage {
+    margin-left: 0px;
+  
+  }
+  .AboutMe-Nav-div{
+    margin-left: 0px;
+    /* margin-top: 60px; */
+  }
+  .AboutMe-page {
+  
+    padding-bottom: 0;
+  }
+  .AboutMe-aboutMeTitle {
+    /* justify-content: left; */
+    text-align: left;
+
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .AboutMe-myCvTitle{
+    text-align: left;
+    margin-left: 80px;
+    /* font-size: 20px; */
+  }
+  .AboutMe-ulDetails {
+ 
+    margin-left: 0%;
+    padding-right: 10px;
+      font-size: 15px;
+      /* padding-left: 20px; */
+     
+  }
+  .AboutMe-title{
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  .AboutMe-links{
+    display: flex;
+  }
+
+  .AboutMe-linkedinLink{
+   
+    margin-top: 10px;
+    
+  }
+  
+  .AboutMe-gitHubLink{
+    margin-left: 10px;
+    margin-top: 3px;
+  
+    
+  }
+ 
 }

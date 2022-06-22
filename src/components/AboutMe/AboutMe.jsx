@@ -21,10 +21,13 @@ const AboutMe = () => {
   ];
   return (
     <div className="AboutMe-page">
-      <NavTabs className="AboutMe-Nav" tabName="aboutMe" />
+      <div className="AboutMe-Nav-div">
+        <NavTabs className="AboutMe-Nav" tabName="aboutMe" />
+      </div>
       <div className="AboutMe-mainPage">
         <div className="AboutMe-headerContainer">
           <h1 className="AboutMe-title">Yehuda Krantz</h1>
+
           <div className="AboutMe-linkesDiv">
             {/* <Box display="flex" alignItems="center" justifyContent="center"> */}
 
@@ -49,24 +52,26 @@ const AboutMe = () => {
           </div>
         </div>
         {/* <br></br> */}
-        My CV:
-        <div className="AboutMe-cvDiv">
-          <a
-            className="AboutMe-cvFile"
-            // if want to show  directly in google
-            // href="https://drive.google.com/file/d/1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs/view?usp=sharing"
-            href={CV_LINK}
-          >
-            <Tooltip title={"downlaod CV"}>
-              <FileDownloadIcon
-                className="AboutMe-cvFile"
-                variant="contained"
-                fontSize="large"
-              />
-            </Tooltip>
-          </a>
+        <div className="AboutMe-myCvTitle">
+          My CV:
+          <div className="AboutMe-cvDiv">
+            <a
+              className="AboutMe-cvFile"
+              // if want to show  directly in google
+              // href="https://drive.google.com/file/d/1giY5P58xg94jsrnIFpy_ZC9mfUBgV0Xs/view?usp=sharing"
+              href={CV_LINK}
+            >
+              <Tooltip title={"downlaod CV"}>
+                <FileDownloadIcon
+                  className="AboutMe-cvFile"
+                  variant="contained"
+                  fontSize="large"
+                />
+              </Tooltip>
+            </a>
+          </div>
         </div>
-        <h2 className="AboutMe-aboutMeTitle">About Me: </h2>
+        <h4 className="AboutMe-aboutMeTitle">About Me: </h4>
         <ul className="AboutMe-ulDetails">
           {aboutMeDetails.map((detail) => (
             <Detail key={detail} detail={detail} />

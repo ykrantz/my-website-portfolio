@@ -8,7 +8,7 @@ const Projects = ({ myProjects }) => {
   // sort acording to id
   myProjects.sort((a, b) => a.id - b.id);
   return (
-    <div>
+    <div className="Projects-mainContainer">
       <div className="Projects-projectContainer">
         {myProjects.map((project) => (
           <Project key={project.projectName} project={project} />

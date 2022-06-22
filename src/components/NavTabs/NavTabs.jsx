@@ -26,7 +26,7 @@ export default function NavTabs({ tabName }) {
   let navigate = useNavigate();
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%", m: 2 }} className="NavTabs-Box">
       <Tabs value={value} aria-label="nav tabs example">
         <Tab
           label="Portfolio"

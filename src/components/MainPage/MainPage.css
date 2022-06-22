@@ -1,14 +1,25 @@
 .MainPage-title {
-  color: brown;
+  color: crimson;
+  font-size: 25px;
 }
 
 .MainPage-linkedin {
-  position: absolute;
-  left: 20px;
+  /* position: absolute;
+  left: 20px; */
 }
 
 .MainPage-page {
-  position: absolute;
+  /* position: absolute;
   top: 20px;
-  left: 20px;
+  left: 20px; */
+  /* margin-left: 20px; */
+}
+@media only screen  and (max-width:600px) {
+  .MainPage-page {
+    /* position: absolute;
+    top: 20px;
+    left: 20px; */
+    margin-left: 5px;
+    /* height: calc(100vh - 3px); */
+  }
 }

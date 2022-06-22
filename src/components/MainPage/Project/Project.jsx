@@ -58,6 +58,7 @@ const Project = ({
   return (
     active && (
       <Card className="Project-card" sx={{ maxWidth: 345 }}>
+        {/* // <Card className="Project-card" sx={{ maxWidth: 300 }}> */}
         <div className="Project-CardHeader">
           <CardHeader
             avatar={
@@ -83,7 +84,10 @@ const Project = ({
           <a href={url} target="_blank">
             <CardMedia
               component="img"
-              height="194"
+              // height="194"
+              // width="10px"
+              height={194}
+              // width={"30%"}
               image={image}
               alt={projectName}
             />
