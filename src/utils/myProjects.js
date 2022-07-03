@@ -1,3 +1,4 @@
+import playListLogoResponsive from "../images/playlist-responsive-b.png";
 import playListLogo from "../images/welcome_page_known_user_c.png";
 import onlineShopLogo from "../images/online-shop-b.png";
 import panchTimeLogo from "../images/panckTimeClock.png";
@@ -12,12 +13,39 @@ const myProjects = [
     id: 10,
     frameWork: "React + Node.js + MongoDB",
     projectName: "Video Play List",
-    image: playListLogo,
+    image: playListLogoResponsive,
     url: "https://playlist-ykrantz.netlify.app/",
     gitHubUrlClient: "https://github.com/ykrantz/song-list-full-client",
     gitHubUrlServer: "https://github.com/ykrantz/song-list-full-server",
     avatar: "VP",
     active: true,
+    details: `JWT athorizaiotn || Password bcrypt || MUI || Responsive ||
+      AJAX || Express.js
+      React hooks ||
+      DB
+      `,
+
+    features: [
+      "- Register and log in in with your personal account",
+      "- Website will remember you in your next enternce with your athorizaiotn tocken",
+      "- Password encrypted by bcrypt library and DB saves only the encypted password ",
+      "- Create new playlists and Save songs in playlists",
+      "- Search for videos in YouTube with out advertizments",
+      "- Play the video on your demand",
+      "- Find which other user also liked the song",
+      "- Search video in your playlist",
+    ],
+  },
+  {
+    id: 11,
+    frameWork: "React + Node.js + MongoDB",
+    projectName: "Video Play List",
+    image: playListLogo,
+    url: "https://ykrantz-playlist-notresp.netlify.app",
+    gitHubUrlClient: "https://github.com/ykrantz/song-list-full-client",
+    gitHubUrlServer: "https://github.com/ykrantz/song-list-full-server",
+    avatar: "VP",
+    active: false,
     details: `JWT athorizaiotn || Password bcrypt || MUI ||
       AJAX || Express.js
       React hooks ||
@@ -98,7 +126,7 @@ const myProjects = [
     gitHubUrlServer: "https://github.com/ykrantz/weather-app-server",
     avatar: "WA",
     active: true,
-    details: `BootStrap || React hooks ||
+    details: `BootStrap || React hooks || Responsive ||
       AJAX || Express.js ||
       DB 
       `,
