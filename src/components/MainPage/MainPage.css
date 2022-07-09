@@ -1,6 +1,6 @@
 .MainPage-title {
   color: crimson;
-  font-size: 25px;
+  font-size: 6  vh;
 }
 
 .MainPage-linkedin {
@@ -21,5 +21,9 @@
     left: 20px; */
     margin-left: 5px;
     /* height: calc(100vh - 3px); */
+  }
+  .MainPage-title {
+    color: crimson;
+    font-size: 4vh;
   }
 }

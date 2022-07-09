@@ -1,8 +1,8 @@
-import playListLogoResponsive from "../images/playlist-responsive-b.png";
+import playListLogoResponsive from "../images/playlist-responsive-c.png";
 import playListLogo from "../images/welcome_page_known_user_c.png";
 import onlineShopLogo from "../images/online-shop-b.png";
 import panchTimeLogo from "../images/panckTimeClock.png";
-import ticTacToeLogo from "../images/tic-tac-toe.PNG";
+import ticTacToeLogo from "../images/tic-tac-toe-responsive.png";
 import groceryShopLogo from "../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../images/chuckNorris.PNG";
 import memoryGame from "../images/memoryGame.PNG";
@@ -19,7 +19,7 @@ const myProjects = [
     gitHubUrlServer: "https://github.com/ykrantz/song-list-full-server",
     avatar: "VP",
     active: true,
-    details: `JWT athorizaiotn || Password bcrypt || MUI || Responsive ||
+    details: `JWT authorizaiotn || Password bcrypt || MUI || Responsive ||
       AJAX || Express.js
       React hooks ||
       DB
@@ -66,7 +66,7 @@ const myProjects = [
 
   {
     id: 12,
-    frameWork: "HTML (vanila) + CSS + JS",
+    frameWork: "HTML (vanilla) + CSS + JS",
     projectName: "Tic Tac Toe",
     image: ticTacToeLogo,
     url: "https://tic-tac-toe-ykrantz.netlify.app/",
@@ -74,7 +74,7 @@ const myProjects = [
     gitHubUrlServer: "",
     avatar: "TT",
     active: true,
-    details: "HTML || CSS || HTML Query Selectors || JavaScript",
+    details: "HTML || CSS || HTML Query Selectors || Responsive || JavaScript",
     features: [
       "Play with your friend Tic Tac Toe until winning",
       "Decide how match row/columns you wnt in game between 3-10 row/columns",
@@ -103,7 +103,7 @@ const myProjects = [
   },
   {
     id: 15,
-    frameWork: "HTML (vanila) + JS + API",
+    frameWork: "HTML (vanilla) + JS + API",
     projectName: "Memory Game",
 
     image: memoryGame,
@@ -157,7 +157,7 @@ const myProjects = [
   },
   {
     id: 22,
-    frameWork: "HTML (vanila) + JS + API",
+    frameWork: "HTML (vanilla) + JS + API",
     projectName: "Chuck Noris Jokes",
     image: chuckNorris,
     url: "https://chuck-norris-ykrantz.netlify.app/",
@@ -174,7 +174,7 @@ const myProjects = [
   },
   {
     id: 50,
-    frameWork: "HTML (vanila) + CSS + JS",
+    frameWork: "HTML (vanilla) + CSS + JS",
     projectName: "Grocery Store",
     image: groceryShopLogo,
     url: "",
