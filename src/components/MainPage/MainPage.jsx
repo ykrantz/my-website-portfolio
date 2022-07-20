@@ -7,8 +7,9 @@ import myProjects from "../../utils/myProjects";
 const MainPage = () => {
   return (
     <div className="MainPage-page">
-      <NavTabs tabName="mainPage" />
-
+      <div className="MainPage-nav">
+        <NavTabs tabName="mainPage" />
+      </div>
       <h1 className="MainPage-title">My Projects</h1>
       <div className="MainPage-projectsContainer">
         <Projects myProjects={myProjects} />
