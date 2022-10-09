@@ -9,8 +9,6 @@ function App() {
       <header className="App-header">
         <Router>
           <Routes>
-            {/* <Route exact path="/" element={<LogIn />} /> */}
-            {/* <Route exact path="/" element={<p>dd</p>} /> */}
             <Route exact path="/" element={<MainPage />} />
             <Route exact path="/aboutme" element={<AboutMe />} />
           </Routes>

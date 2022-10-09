@@ -7,11 +7,12 @@ import groceryShopLogo from "../images/grocery-gf851f3910_640.jpg";
 import chuckNorris from "../images/chuckNorris.PNG";
 import memoryGame from "../images/memoryGame.PNG";
 import weatherApp from "../images/weatherAppScreen.png";
+import movieDataBaseLogo from "../images/movie_data_base.png";
 
 const myProjects = [
   {
     id: 10,
-    frameWork: "React + Node.js + MongoDB",
+    frameWork: "React.js + Node.js + MongoDB",
     projectName: "Video Play List",
     image: playListLogoResponsive,
     url: "https://playlist-ykrantz.netlify.app/",
@@ -87,7 +88,20 @@ const myProjects = [
   },
   {
     id: 13,
-    frameWork: "React + API ",
+    frameWork: "React + TypeScript + API ",
+    projectName: "Movie DataBase",
+    image: movieDataBaseLogo,
+    url: "https://movielist-ykrantz.netlify.app",
+    gitHubUrlClient: "https://github.com/ykrantz/movie-list-client",
+    gitHubUrlServer: "",
+    avatar: "MD",
+    active: true,
+    details: "React hooks || MUI || TS || AJAX ",
+    features: ["- Search movie from dataBase", "- DarkMode"],
+  },
+  {
+    id: 14,
+    frameWork: "React.js + API ",
     projectName: "Online Shop",
     image: onlineShopLogo,
     url: "https://online-shop-ykrantz.netlify.app/",
@@ -118,7 +132,7 @@ const myProjects = [
 
   {
     id: 19,
-    frameWork: "React + Node.js + MongoDB",
+    frameWork: "React.js + Node.js + MongoDB",
     projectName: "Weater App",
     image: weatherApp,
     url: "https://weatherapp-ykrantz.netlify.app/",
@@ -138,7 +152,7 @@ const myProjects = [
   },
   {
     id: 20,
-    frameWork: "React + Node.js + MongoDB",
+    frameWork: "React.js + Node.js + MongoDB",
     projectName: "Panck Time clock",
     image: panchTimeLogo,
     url: "https://panch-time-clock-ykrantz.netlify.app/",
@@ -187,7 +201,7 @@ const myProjects = [
   },
   {
     id: 60,
-    frameWork: "React",
+    frameWork: "React.js",
     projectName: "TO DO LIST",
     image: groceryShopLogo,
     url: "https://to-do-list-ykrantz.netlify.app/",
@@ -200,7 +214,7 @@ const myProjects = [
   },
   {
     id: 70,
-    frameWork: "React + Redux",
+    frameWork: "React.js + Redux",
     projectName: "TO DO LIST- REDUX",
     image: groceryShopLogo,
     url: "https://to-do-list-redux-ykrantz.netlify.app/",
